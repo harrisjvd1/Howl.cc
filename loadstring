@@ -1,0 +1,1205 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+--[[
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local KeySystemUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/MaGiXxScripter0/keysystemv2api/master/ui/xrer_mstudio45.lua"))()
+KeySystemUI.New({
+    ApplicationName = "OmenHub", -- DONT CHANGE OR NOT FUNCTIONAL
+    Name = "Salava Hub", -- Your Script name
+    Info = "Get a key to use Salava Hub", -- Info text in the GUI, keep empty for default text.
+    DiscordInvite = "discord.gg/omenhub", -- Optional.
+    AuthType = "ip" -- Can select verifycation with ClientId or IP ("clientid" or "ip")
+})
+repeat task.wait() until KeySystemUI.Finished() or KeySystemUI.Closed
+if KeySystemUI.Finished() and KeySystemUI.Closed == false then
+    print("The entered key was correct, script loading...")
+    --]]
+    local Window = Rayfield:CreateWindow({
+		Name = "Salava Hub",
+		LoadingTitle = "Be one step ahead of the game with Salava Hub",
+		LoadingSubtitle = "by semi",
+		ConfigurationSaving = {
+		   Enabled = true,
+		   FolderName = nil, -- Create a custom folder for your hub/game
+		   FileName = "Salava Hub"
+		},
+		Discord = {
+		   Enabled = true,
+		   Invite = "ujmcAhJEvX", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+		   RememberJoins = false -- Set this to false to make them join the discord every time they load it up
+		},
+		KeySystem = true, -- false bc other keysys
+		KeySettings = {
+		   Title = "Salava Hub",
+		   Subtitle = "Enter key",
+		   Note = "Get the key in .gg/ujmcAhJEvX",
+		   FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+		   SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+		   GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+		   Key = {"123"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+		}
+	 })
+	
+local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
+local Label = Tab:CreateLabel("Welcome Salava Hub User!")
+local Label = Tab:CreateLabel("Version: V1.2")
+
+local Section = Tab:CreateSection("Universal")
+     local Button = Tab:CreateButton({
+		Name = "Anonymous",
+		Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/UNKOWN331/ANONYMOUS2/main/HUB",true))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+     local Button = Tab:CreateButton({
+		Name = "Universal AimbotV2",
+		Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Scr1pterLua/UniversalV2/main/source"))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+     local Button = Tab:CreateButton({
+		Name = "Universal Aimbot",
+		Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/abstractflags/aceware/main/main.lua"))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+	 local Button = Tab:CreateButton({
+		Name = "Owl Hub",
+		Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+
+local Section = Tab:CreateSection("Da Hood")
+	 local Button = Tab:CreateButton({
+		Name = "Desync Resolver",
+		Callback = function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/harrisjvd1/Project_Salava/main/Da%20Hood/Desync%20Resolver'))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+	 local Button = Tab:CreateButton({
+		Name = "Drax",
+		Callback = function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/harrisjvd1/Project_Salava/main/Da%20Hood/Drax'))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+	 local Button = Tab:CreateButton({
+		Name = "Howl",
+		Callback = function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/harrisjvd1/Project_Salava/main/Da%20Hood/Howl'))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+	 local Button = Tab:CreateButton({
+		Name = "SwagMode",
+		Callback = function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/harrisjvd1/Project_Salava/main/Da%20Hood/Swag%20Mode'))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+	 local Button = Tab:CreateButton({
+		Name = "Osiris",
+		Callback = function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/harrisjvd1/Project_Salava/main/Da%20Hood/Osiris'))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+	 local Button = Tab:CreateButton({
+		Name = "Misery",
+		Callback = function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/harrisjvd1/Project_Salava/main/Da%20Hood/Misery'))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+	 local Button = Tab:CreateButton({
+		Name = "MoreUNC",
+		Callback = function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/harrisjvd1/Project_Salava/main/Da%20Hood/More%20UNC'))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+	 local Button = Tab:CreateButton({
+		Name = "Stellar",
+		Callback = function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/harrisjvd1/Project_Salava/main/Da%20Hood/Stellar'))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+	 local Button = Tab:CreateButton({
+		Name = "SwagMode",
+		Callback = function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/harrisjvd1/Project_Salava/main/Da%20Hood/Swag%20Mode'))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+
+
+
+     local Button = Tab:CreateButton({
+		Name = "Spaceware",
+		Callback = function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/Maxiiiiiiiiiiiiiiiiiiiiiii/spaceware/main/spaceware'))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+     local Button = Tab:CreateButton({
+		Name = "Azure V3",
+		Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Actyrn/Scripts/main/AzureModded"))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+     local Button = Tab:CreateButton({
+		Name = "Polakya",
+		Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/mezzopera/Omen-Hub/main/omen_hub.lua"))() 
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+     local Button = Tab:CreateButton({
+		Name = "Faded",
+		Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded-Grid/main/YesEpic", true))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+     local Button = Tab:CreateButton({
+		Name = "TBO",
+		Callback = function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/cool5013/TBO/main/TBOscript'))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+     local Button = Tab:CreateButton({
+		Name = "Vortex",
+		Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/ImagineProUser/vortexdahood/main/vortex", true))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+     local Button = Tab:CreateButton({
+		Name = "Nyula",
+		Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/nyulachan/nyula/main/nyulauh"))();
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+local Section = Tab:CreateSection("Arsenal")
+     local Button = Tab:CreateButton({
+		Name = "Solaris",
+		Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/toasty-dev/pissblox/main/solaris_bootstrapper.lua",true))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+	 local Button = Tab:CreateButton({
+		Name = "Neutron",
+		Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/PawsThePaw/Neutron.lua/main/MainNeutron.lua"))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+	 local Button = Tab:CreateButton({
+		Name = "OP Gui",
+		Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/AdvanceFTeam/Our-Scripts/main/AdvanceTech/Arsenal_V1.6.lua"))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+	 local Button = Tab:CreateButton({
+		Name = "Quotas Hub",
+		Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Insertl/QuotasHub/main/BETAv1.3"))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+local Section = Tab:CreateSection("Arsenal")	 
+	 local Button = Tab:CreateButton({
+		Name = "FFJ Hub",
+		Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/BladeBall.lua"))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+	 local Button = Tab:CreateButton({
+		Name = "Visual 3.5",
+		Callback = function()
+			loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a5945467f3b9388503ca653c0ea49cba.lua"))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+	 local Button = Tab:CreateButton({
+		Name = "Nexam",
+		Callback = function()
+			loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/6af56c1753ac6679dee3acbd1fd952e5.lua"))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+	 local Button = Tab:CreateButton({
+		Name = "Schema",
+		Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/manimanni/Schema/main/posse.lua"))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+	 local Button = Tab:CreateButton({
+		Name = "Astral",
+		Callback = function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/Augustzyzx/A-s-t-r-a-l/main/Loader_BladeBall.lua'))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+	 
+local Section = Tab:CreateSection("Doors")
+	 local Button = Tab:CreateButton({
+		Name = "FFJ Hub",
+		Callback = function()
+			loadstring(game:HttpGet('https://rawscripts.net/raw/DOORS-FFJ-Hub-11365'))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+	 local Button = Tab:CreateButton({
+		Name = "Blacking Hub",
+		Callback = function()
+			loadstring(game:HttpGetAsync("https://pastebin.com/raw/R8QMbhzv"))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+	 local Button = Tab:CreateButton({
+		Name = "NightHub",
+		Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/kiurgjirkgk/NightForRoblox/main/loader.lua"))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+	 local Button = Tab:CreateButton({
+		Name = "NoName",
+		Callback = function()
+			loadstring(game:HttpGet("https://pastebin.com/raw/M4mpGErb",true))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+local Section = Tab:CreateSection("Blox Fruits")
+	 local Button = Tab:CreateButton({
+		Name = "BKHAX",
+		Callback = function()
+			loadstring(game:HttpGet(("https://raw.githubusercontent.com/koonpeatch/PeatEX/master/BKHAX/BloxFruits"),true))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+	 local Button = Tab:CreateButton({
+		Name = "Perd Hub",
+		Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/PerdHub/Blosfruitscript/main/PerdLoader"))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+	 local Button = Tab:CreateButton({
+		Name = "Matsura Hub",
+		Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/SkibidiSupremacy/Loader.xyz/main/Loader.Blurk%20ST%20%3A%20G"))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+local Section = Tab:CreateSection("Jailbreak")
+	 local Button = Tab:CreateButton({
+		Name = "Sensation",
+		Callback = function()
+			loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/730854e5b6499ee91deb1080e8e12ae3.lua"))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+	 local Button = Tab:CreateButton({
+		Name = "Ice Tray V3",
+		Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/piglex9/icetray3/main/latest.lua"))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+local Section = Tab:CreateSection("Isle")
+	 local Button = Tab:CreateButton({
+		Name = "Item Bringer",
+		Callback = function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/harrisjvd1/Project_Salava/main/Isle/Item%20Bringer'))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+	 local Button = Tab:CreateButton({
+		Name = "Krypton",
+		Callback = function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/PascalHacks/Krypton/main/Games/3431407618'))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+local Section = Tab:CreateSection("Murder Mystery 2")
+	 local Button = Tab:CreateButton({
+		Name = "Eclipse Hub",
+		Callback = function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/harrisjvd1/Project_Salava/main/Da%20Hood/Swag%20Mode'))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+local Section = Tab:CreateSection("Westbound")
+	 local Button = Tab:CreateButton({
+		Name = "Westbound Aimbot",
+		Callback = function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/StupidProAArsenal/main/main/stupid%20guy%20ever%20in%20the%20west',true))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+	 local Button = Tab:CreateButton({
+		Name = "ESP",
+		Callback = function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/harrisjvd1/Project_Salava/main/Westbound/ESP'))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+	 local Section = Tab:CreateSection("Others")
+	 local Button = Tab:CreateButton({
+		Name = "A dusty trip",
+		Callback = function()
+			loadstring(game:HttpGet("https://scriptblox.com/raw/a-dusty-trip-ROCKET-very-op-script-12870"))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+	 local Button = Tab:CreateButton({
+		Name = "Cold War",
+		Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/whateverScripts/coldwar/main/roblox%20coldwar%20script",true))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+	 
+	 local Button = Tab:CreateButton({
+		Name = "Prison Life",
+		Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/QP-Community/Roblox-Exploit/main/TigerAdmin"))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+	 local Button = Tab:CreateButton({
+		Name = "Tycoon RNG",
+		Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/MadbukScripts/Scripts/main/Obfuscated%20Tycoon%20RNG.lua"))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+	 local Button = Tab:CreateButton({
+		Name = "Untitled Tag Game",
+		Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Zer0ids/Qwerty/main/UntitledTag/NewScript.lua"))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+	 local Button = Tab:CreateButton({
+		Name = "Zombie Attack",
+		Callback = function()
+			loadstring(game:HttpGet(('https://raw.githubusercontent.com/RTrade/Voidz/main/Games.lua'),true))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+	 local Button = Tab:CreateButton({
+		Name = "Atomium Bedwars",
+		Callback = function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/AFGCLIENT/Atomium/main/mainhecker'))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+	 local Button = Tab:CreateButton({
+		Name = "Demonfall GODMODE",
+		Callback = function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/harrisjvd1/Project_Salava/main/Demonfall/Godmode'))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+	 local Button = Tab:CreateButton({
+		Name = "Rivals",
+		Callback = function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/harrisjvd1/Project_Salava/main/Rivals/Aimbot'))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+	 local Button = Tab:CreateButton({
+		Name = "Real Football 24",
+		Callback = function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/harrisjvd1/Project_Salava/main/Real%20Football%2024/NONAME'))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+          
+                    local Tab = Window:CreateTab("Credits", 4483362458) -- Title, Image
+                    local Label = Tab:CreateLabel("Salava Hub by semi & harrisjvd")
+                    local Label = Tab:CreateLabel("I DO NOT CLAIM THAT THE SCRIPTS ARE MINE!")
+                    local Label = Tab:CreateLabel("discord.gg/omenhub")
+                    local Label = Tab:CreateLabel("discord.gg/wdnwnwwty6")
+             --[[      
+                 else
+                     print("Salava user closed the GUI.")
+                 end
+          --]]
