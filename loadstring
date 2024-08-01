@@ -916,6 +916,48 @@ local Section = Tab:CreateSection("Murder Mystery 2")
 		   })
 		end,
 	 })
+
+	 local Button = Tab:CreateButton({
+		Name = "Nexus",
+		Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/s-0-a-b/nexus/main/loadstring"))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
+
+	 local Button = Tab:CreateButton({
+		Name = "NoNAME",
+		Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/washingtontrichkid2/Newgay/main/MM2"))()
+		   Rayfield:Notify({
+			  Title = "Executed Successfully!",
+			  Content = "Selected script has been executed successfully!",
+			  Duration = 6.5,
+			  Image = 4483362458,
+			  Actions = { -- Notification Buttons
+				 Ignore = {
+					Name = "Okay!",
+					Callback = function()
+					print("User has seen the nofitication")
+				 end
+			  },
+		   },
+		   })
+		end,
+	 })
 local Section = Tab:CreateSection("Westbound")
 	 local Button = Tab:CreateButton({
 		Name = "Westbound Aimbot",
@@ -1169,7 +1211,7 @@ local Section = Tab:CreateSection("Westbound")
 		end,
 	 })
 
-	 
+
 
 
 
